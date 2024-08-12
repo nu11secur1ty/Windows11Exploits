@@ -1,0 +1,203 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+NOTMYFAULT DIALOGEX 0, 0, 162, 260
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Not My Fault"
+CLASS "NotMyFault"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "High &IRQL fault (kernelmode)",IDC_IRQL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,27,46,107,10
+    CONTROL         "&Buffer Overflow",IDC_BUFFEROVERFLOW,"Button",BS_AUTORADIOBUTTON,27,61,65,10
+    CONTROL         "&Code overwrite",IDC_WILDPOINTER,"Button",BS_AUTORADIOBUTTON,27,76,63,10
+    CONTROL         "&Stack trash",IDC_STACKTRASH,"Button",BS_AUTORADIOBUTTON,27,91,52,10
+    CONTROL         "&High IRQL fault (usermode)",IDC_PAGEFAULT,"Button",BS_AUTORADIOBUTTON,27,106,101,10
+    CONTROL         "H&ang IRP",IDC_HANGIRP,"Button",BS_AUTORADIOBUTTON,27,120,47,10
+    CONTROL         "&Deadlock",IDC_DEADLOCK,"Button",BS_AUTORADIOBUTTON,27,136,47,10
+    CONTROL         "Han&g",IDC_HANG,"Button",BS_AUTORADIOBUTTON,27,151,33,10
+    DEFPUSHBUTTON   "&Do Bug",IDOK,25,163,55,14
+    PUSHBUTTON      "Leak &Paged",IDC_LEAK_PAGE,14,196,63,14
+    PUSHBUTTON      "Leak &Nonpaged",IDC_LEAK_NONPAGE,82,196,63,14
+    EDITTEXT        IDC_LEAKMB,64,214,33,14,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    PUSHBUTTON      "E&xit",IDCANCEL,105,239,50,14
+    LTEXT           "Pick your poison:",IDC_STATIC,7,34,55,8
+    LTEXT           "NotMyFault\nDriver crash test program\nBy Mark Russinovich © 2002-2009",IDC_STATIC,5,5,119,25
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,182,148,2
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,234,148,2
+    LTEXT           " Leak Pool (leak freed on exit):",IDC_STATIC,7,186,97,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,31,148,2
+    LTEXT           "Leak/second:",IDC_STATIC,16,217,46,8
+    LTEXT           "KB",IDC_STATIC,99,218,10,8
+    DEFPUSHBUTTON   "&BSOD Colors",IDCOLOR,85,163,55,14
+END
+
+BSODCOLORS DIALOGEX 50, 50, 298, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose BSOD Colors"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "&FG",IDC_RADIOFG,"Button",BS_AUTORADIOBUTTON,80,103,25,10
+    CONTROL         "&BG",IDC_RADIOBG,"Button",BS_AUTORADIOBUTTON,107,103,25,10
+    CONTROL         "",720,"Static",SS_SIMPLE | WS_TABSTOP,4,14,140,86
+    PUSHBUTTON      "&Cancel",IDCANCEL,237,140,54,14
+    DEFPUSHBUTTON   "&OK",IDC_DONE,179,140,54,14
+    LTEXT           "&Color choices:",IDC_STATIC,4,4,140,9
+    CONTROL         "",710,"Static",SS_SIMPLE | SS_SUNKEN,152,16,118,39
+    CONTROL         "",702,"Static",SS_SIMPLE | SS_SUNKEN,280,16,8,39
+    CONTROL         "",709,"Static",SS_SIMPLE | SS_SUNKEN,151,60,40,26
+    RTEXT           "Color",730,151,87,20,9
+    LTEXT           "|S&olid",731,171,87,20,9
+    RTEXT           "Hu&e:",723,193,62,20,9
+    EDITTEXT        703,215,60,18,12,WS_GROUP
+    RTEXT           "&Sat:",724,193,76,20,9
+    EDITTEXT        704,215,74,18,12,WS_GROUP
+    RTEXT           "&Lum:",725,193,90,20,9
+    EDITTEXT        705,215,88,18,12,WS_GROUP
+    RTEXT           "&Red:",726,243,62,24,9
+    EDITTEXT        706,269,60,18,12,WS_GROUP
+    RTEXT           "&Green:",727,243,76,24,9
+    EDITTEXT        707,269,74,18,12,WS_GROUP
+    RTEXT           "Bl&ue:",728,243,90,24,9
+    EDITTEXT        708,269,88,18,12,WS_GROUP
+    CTEXT           "          Preview          ",IDC_PREVIEW,10,103,63,25,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,133,284,1
+    PUSHBUTTON      "&Select",IDOK,79,113,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "NOTMYFAULT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Sysinternals - www.sysinternals.com"
+            VALUE "FileDescription", "Driver bug test program"
+            VALUE "FileVersion", "3.0"
+            VALUE "InternalName", "Sysinternals NotMyfault"
+            VALUE "LegalCopyright", "Copyright © 2004-2009 Mark Russinovich"
+            VALUE "OriginalFilename", "NotMyfault.exe"
+            VALUE "ProductName", "Sysinternals Notmyfault"
+            VALUE "ProductVersion", "3.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+APPICON                 ICON                    "icon1.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

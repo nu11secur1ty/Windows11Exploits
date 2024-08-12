@@ -1,0 +1,5 @@
+TARGETNAME=myfault
+TARGETTYPE=DRIVER
+
+SOURCES=myfault.c myfault.rc
+
